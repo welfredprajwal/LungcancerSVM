@@ -1,13 +1,13 @@
-🫁 Lung Cancer Detection using SVM
+# Lung Cancer Detection using SVM
 
 
-📌 Overview
+# Overview
 
 This project uses Support Vector Machine (SVM), a supervised machine learning algorithm, to predict the likelihood of lung cancer based on demographic, lifestyle, and symptom data. Early detection of lung cancer is critical for effective treatment and improving patient outcomes.
 
 The model uses features such as age, gender, smoking habits, chronic disease, fatigue, and other symptoms to classify patients as having lung cancer or not.
 
-📂 Dataset
+# Dataset
 
 The dataset contains the following columns:
 
@@ -44,7 +44,7 @@ CHEST PAIN	Chest pain presence (Yes/No)
 LUNG_CANCER	Target variable: 1 = Lung Cancer, 0 = No Lung Cancer
 
 
-⚙️ Workflow
+# Workflow
 
 1.Data Preprocessing
 
@@ -67,7 +67,7 @@ LUNG_CANCER	Target variable: 1 = Lung Cancer, 0 = No Lung Cancer
   Confusion Matrix visualization
 
 
-Expected Results
+# Results
 
 Accuracy: ~90–95% depending on dataset quality and preprocessing.
 
