@@ -1,4 +1,5 @@
 🫁 Lung Cancer Detection using SVM
+
 📌 Overview
 
 This project applies Machine Learning (Support Vector Machine - SVM) to detect lung cancer based on patient medical data and imaging features. Lung cancer is one of the leading causes of death worldwide, and early detection can significantly improve survival rates.
