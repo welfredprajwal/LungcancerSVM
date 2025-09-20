@@ -11,22 +11,36 @@ The model uses features such as age, gender, smoking habits, chronic disease, fa
 
 The dataset contains the following columns:
 
-Column Name	Description
-GENDER	Male/Female
-AGE	Age of the patient in years
+GENDER (Male/Female)
+
+AGE	(Age of the patient in years)
+
 SMOKING	Smoker (Yes=1 / No=0)
+
 YELLOW_FINGERS	Presence of yellow fingers (Yes/No)
+
 ANXIETY	Anxiety condition (Yes/No)
+
 PEER_PRESSURE	Peer influence (Yes/No)
+
 CHRONIC DISEASE	Presence of chronic diseases
+
 FATIGUE	Fatigue symptom (Yes/No)
+
 ALLERGY	Allergy history (Yes/No)
+
 WHEEZING	Wheezing symptom (Yes/No)
+
 ALCOHOL CONSUMING	Alcohol consumption (Yes/No)
+
 COUGHING	Frequent coughing symptom
+
 SHORTNESS OF BREATH	Breathlessness symptom (Yes/No)
+
 SWALLOWING DIFFICULTY	Difficulty swallowing (Yes/No)
+
 CHEST PAIN	Chest pain presence (Yes/No)
+
 LUNG_CANCER	Target variable: 1 = Lung Cancer, 0 = No Lung Cancer
 
 
