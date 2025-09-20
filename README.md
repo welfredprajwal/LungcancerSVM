@@ -1,56 +1,60 @@
 🫁 Lung Cancer Detection using SVM
 
+
 📌 Overview
 
-This project applies Machine Learning (Support Vector Machine - SVM) to detect lung cancer based on patient medical data and imaging features. Lung cancer is one of the leading causes of death worldwide, and early detection can significantly improve survival rates.
+This project uses Support Vector Machine (SVM), a supervised machine learning algorithm, to predict the likelihood of lung cancer based on demographic, lifestyle, and symptom data. Early detection of lung cancer is critical for effective treatment and improving patient outcomes.
 
-The model uses data preprocessing, feature selection, and SVM classification to identify whether a patient is likely to have lung cancer.
-🎯 Objectives
-
-Preprocess patient and medical imaging data.
-
-Apply SVM classifier to detect lung cancer.
-
-Evaluate model performance with accuracy, precision, recall, and F1-score.
-
-Provide a baseline approach for AI-assisted medical diagnosis.
-
-🛠️ Tech Stack
-
-Language: Python 🐍
-
-Libraries:
-
-NumPy, Pandas → Data Handling
-
-Matplotlib, Seaborn → Data Visualization
-
-Scikit-learn → SVM, Preprocessing, Model Evaluation
+The model uses features such as age, gender, smoking habits, chronic disease, fatigue, and other symptoms to classify patients as having lung cancer or not.
 
 📂 Dataset
 
-Example datasets:
+The dataset contains the following columns:
 
-Kaggle Lung Cancer Dataset (patient attributes like age, smoking habits, symptoms).
+Column Name	Description
+GENDER	Male/Female
+AGE	Age of the patient in years
+SMOKING	Smoker (Yes=1 / No=0)
+YELLOW_FINGERS	Presence of yellow fingers (Yes/No)
+ANXIETY	Anxiety condition (Yes/No)
+PEER_PRESSURE	Peer influence (Yes/No)
+CHRONIC DISEASE	Presence of chronic diseases
+FATIGUE	Fatigue symptom (Yes/No)
+ALLERGY	Allergy history (Yes/No)
+WHEEZING	Wheezing symptom (Yes/No)
+ALCOHOL CONSUMING	Alcohol consumption (Yes/No)
+COUGHING	Frequent coughing symptom
+SHORTNESS OF BREATH	Breathlessness symptom (Yes/No)
+SWALLOWING DIFFICULTY	Difficulty swallowing (Yes/No)
+CHEST PAIN	Chest pain presence (Yes/No)
+LUNG_CANCER	Target variable: 1 = Lung Cancer, 0 = No Lung Cancer
 
-Or CT scan image datasets (after feature extraction).
 
-Dataset features may include:
-
-Age, Gender
-
-Smoking history
-
-Shortness of breath, Coughing of blood, Fatigue
-
-Genetic risk factors
-
-🔑 Workflow
+⚙️ Workflow
 
 1.Data Preprocessing
 
-2.Exploratory Data Analysis (EDA)
+  Encode categorical features (e.g., Gender: Male=1, Female=0).
 
-3.Model Building
+  Scale features using StandardScaler (important for SVM).
 
-4.Model Evaluation
+2.Train-Test Split
+
+  Split dataset into training (80%) and testing (20%) sets.
+
+3.Model Training
+
+  Train an SVM classifier using GridSearchCV for hyperparameter tuning (C, gamma, kernel).
+
+4.Evaluation
+
+  Accuracy, Precision, Recall, F1-score
+
+  Confusion Matrix visualization
+
+
+Expected Results
+
+Accuracy: ~90–95% depending on dataset quality and preprocessing.
+
+High recall for positive cases (lung cancer detection) is critical to avoid false negatives.
